@@ -4,15 +4,16 @@
     background-color: $dark;
     justify-content: center;
     display: flex;
-    filter: drop-shadow(4px 4px 30px rgba(0, 0, 0, 0.60));
+    filter: drop-shadow(4px 4px 30px rgba(0, 0, 0, 0.70));
     bottom: 0%;
     width: 100%;
     
 
     & h5, a {
         color: $light;
-        padding: 5px;
+        padding: 6px;
         margin: 0%;
+        font-weight: 300;
 
         & a:hover {
             color: $primary;

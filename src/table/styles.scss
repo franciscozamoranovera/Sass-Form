@@ -13,6 +13,7 @@
             background-color: darken($color: $background, $amount: 20);
             border-radius: 15px;
             border: 2px solid $background;
+            font-weight: 300;
         }
     }
 
@@ -27,6 +28,10 @@
 
             & .table__row__1 {
                 border-radius: 15px 0 0 15px;
+            }
+
+            & .table__row__2 {
+                font-weight: 400;
             }
 
             & .table__row__options {
