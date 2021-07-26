@@ -7,6 +7,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `npm i node-sass`
 (https://www.npmjs.com/package/node-sass).
 
+npm i node-sass typescript
+npm i node-sass@~4.12 typescript
+
+
+### `npm i sweetalert2`
+(https://sweetalert2.github.io/#download)
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

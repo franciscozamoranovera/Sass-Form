@@ -1,10 +1,14 @@
-import Test from './components/Test'
+import MainPage from './MainPage/MainPage'
+import Navbar from './components/navbar/Navbar'
+import Footer from './components/footer/Footer'
 
 
 function App() {
   return (
     <>
-      <Test/>
+      <Navbar/>
+      <MainPage/>
+      <Footer/>
     </>
   );
 }

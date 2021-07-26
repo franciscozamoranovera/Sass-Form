@@ -1,0 +1,23 @@
+// Main Colors
+$primary:#FFC700;
+$secondary: #717171;
+$background:rgb(247,247,247);
+$danger: rgb(244, 37, 99);
+$success: #74ba24;
+$light: #fff;
+$dark: rgb(33, 33, 33);
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
+//Trasition Time
+$transition: 500ms ease;
+
+
+//Screens
+$mobile-start: 320px;
+$mobile-end: 500px;
+$tablet-start: 501px;
+$tablet-end: 980px;
+$desktop-start: 981px; 

@@ -1,0 +1,57 @@
+@import '../../styles/base/settings';
+
+.btn__container {
+    padding: 10px;
+
+    & > button {
+        width: 100%;
+        cursor: pointer;
+        outline: 0;
+        border: none;
+        border-radius: 12px;
+        padding: 10px;
+        color: $light;
+        font-family: inherit;
+        font-weight: bolder;
+        font-size: 14px;
+        
+    }
+}
+
+.btn__primary {
+    background-color: $primary;
+    transition: $transition;
+    &:hover{
+        background-color: darken($color: $primary, $amount: 10)
+    }
+    
+    &:active{
+        transform:scale(.9);
+
+    }
+
+}
+
+.btn__success {
+    background-color: $success;
+    transition: $transition;
+    &:hover{
+        background-color: darken($color: $success, $amount: 20)
+    }
+
+    &:active{
+        transform:scale(.9);
+    }
+}
+
+.btn__danger {
+    background-color: $danger;
+    transition: $transition;
+    &:hover{
+        background-color: darken($color: $danger, $amount: 20)
+    }
+
+    &:active{
+        transform:scale(.9);
+    }
+}

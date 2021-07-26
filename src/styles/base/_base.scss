@@ -1,0 +1,27 @@
+body, html {
+font-family: 'Inter', sans-serif;
+background-color: $background;
+padding: 0px;
+margin: 0px;
+height: 100%;
+width: 100%;
+
+}
+
+
+.d-none {
+    display: none;
+}
+
+
+#root {
+display: grid;
+min-height: 100vh; //Altura del Viewport (parte visible del documento) = como mínimo, el documento ocupará toda la pantalla (100%).
+grid-template-rows: 1fr auto;
+grid-template-columns: auto;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }

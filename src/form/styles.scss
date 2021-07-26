@@ -1,0 +1,54 @@
+@import '../styles/base/settings';
+
+.form__card {
+    border: 2px solid $dark;
+    border-radius: 15px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+ 
+    & > h1 {
+        color: $dark;
+        padding: 15px;
+        margin: 0;
+        align-items: center;
+
+    }
+    
+}
+
+.form__inputs {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    & > label {
+        font-weight: 700;
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 5px;
+        
+    }
+    
+    & > input, & > textarea {
+        
+        font-family: inherit;
+        font-size: 14px;
+        padding:5px;
+        background-color: $light;
+        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.19));
+        border: 0px;
+        border-radius: 4px;
+        transition: $transition;
+        color: $dark;
+        &:focus {
+            color: rgb(60, 34, 232);
+            background-color: rgb(223, 223, 223);
+            
+        }
+    }
+
+}

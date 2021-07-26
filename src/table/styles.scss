@@ -1,0 +1,65 @@
+@import '../styles/base/settings';
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    
+    thead {    
+        th {
+            color: $light;
+            text-align:center;
+            padding: 10px 0;
+            background-color: darken($color: $background, $amount: 20);
+            border-radius: 15px;
+            border: 2px solid $background;
+        }
+    }
+
+    tbody {
+
+        tr, td {
+
+            background-color: $primary;
+            padding: 10px;
+            border-bottom: 2px solid $background;
+
+
+            & .table__row__1 {
+                border-radius: 15px 0 0 15px;
+            }
+
+            & .table__row__options {
+                border-radius: 0 15px 15px 0;
+            }
+           
+        }
+        
+
+        td {
+            & > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            & > span {
+                margin: 0 6px;
+                cursor: pointer;
+
+
+                & > svg {
+                    transform: scale(1);
+                    transition: $transition;
+
+                    & :hover {
+                     transform: scale(1.05);
+                    }
+                }
+            }
+
+
+            } 
+        }
+    }
+}
+
