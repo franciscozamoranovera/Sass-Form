@@ -3,7 +3,7 @@ import Table from '../table/Table'
 import Form from '../form/Form'
 import './styles.scss'
 
-const API = 'https://api-tasks.vercel.app/api';
+const API = process.env.REACT_APP_SERVER;
 
 const MainPage = () => {
 

@@ -66,14 +66,14 @@ const Form = (props) => {
         const response = await fetch(`${API}/task`, config); // POST
         const data = await response.json();
         if (data.error) alert(data.error)
-
+        
         else {
+            getTasks()
             Swal.fire({
                 icon: 'success',
                 title: 'Felicitaciones',
                 text: data.success
             });
-            getTasks()
             resetForm()
         }
     };
