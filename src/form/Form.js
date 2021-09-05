@@ -4,7 +4,7 @@ import Button from '../components/buttons/Button';
 import Swal from 'sweetalert2';
 import './styles.scss';
 
-const API = 'https://api-tasks.vercel.app/api';
+const API = process.env.REACT_APP_SERVER;
 
 
 const Form = (props) => {
