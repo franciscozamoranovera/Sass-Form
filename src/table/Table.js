@@ -51,7 +51,7 @@ const Table = (props) => {
             <thead>
                 <tr className="table__headers">
                     <th>ID</th>
-                    <th>Responsable</th>
+                    <th>responsible</th>
                     <th>Descripción</th>
                     <th>Opciones</th>
                 </tr>
@@ -65,7 +65,7 @@ const Table = (props) => {
                             tasks.map((task) => {
                                 return <tr key={task.id}>
                                     <td className="table__row__1">{task.id}</td>
-                                    <td className="table__row__2">{task.responsable}</td>
+                                    <td className="table__row__2">{task.responsible}</td>
                                     <td className="table__row__3">{task.description}</td>
                                     <td className="table__row__options">
                                         <div>

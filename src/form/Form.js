@@ -12,20 +12,20 @@ const Form = (props) => {
     const { tasks, taskId, setTaskId, getTasks } = props;
 
     const [form, setForm] = useState({
-        responsable: "",
+        responsible: "",
         description: ""
     });
 
     const editTask = async () => {
         try {
-            const { responsable, description } = form;
+            const { responsible, description } = form;
             const response = await fetch(`${API}/task/${taskId}`, {
                 method: 'PATCH',
                 headers: {
                     "Content-Type": "application/json", //headers (objeto): dice al sistema que ese está enviando un dato de tipo JSON.
                 },
                 body: JSON.stringify({
-                    responsable,
+                    responsible,
                     description,
                 })
 
@@ -52,14 +52,14 @@ const Form = (props) => {
     };
 
     const createTask = async () => {
-        const { responsable, description } = form;
+        const { responsible, description } = form;
         const config = {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json", //Indica qué tipo de info le estamos enviando, en este caso un application/json
             },
             body: JSON.stringify({
-                responsable,
+                responsible,
                 description,
             })
         };
@@ -80,16 +80,16 @@ const Form = (props) => {
 
     const resetForm = () => {
         setForm({
-            responsable: "",
+            responsible: "",
             description: ""
         })
         setTaskId(null);
     };
 
     const formValidation = (task, success) => {
-        const { responsable, description } = task;
+        const { responsible, description } = task;
 
-        if (responsable.length < 3) {
+        if (responsible.length < 3) {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
@@ -132,11 +132,11 @@ const Form = (props) => {
                 <h1 className="form__header" > {taskId !== null ? "Edición" : "Creación"} de tareas</h1>
 
                 <FormInput
-                    label="Responsable"
-                    id="responsableInput"
-                    value={form.responsable}
+                    label="responsible"
+                    id="responsibleInput"
+                    value={form.responsible}
                     handleChange={handleChange}
-                    name="responsable"
+                    name="responsible"
                     placeholder="Francisco"
                 />
 
