@@ -132,7 +132,7 @@ const Form = (props) => {
                 <h1 className="form__header" > {taskId !== null ? "Edición" : "Creación"} de tareas</h1>
 
                 <FormInput
-                    label="responsible"
+                    label="Responsable"
                     id="responsibleInput"
                     value={form.responsible}
                     handleChange={handleChange}
@@ -147,7 +147,7 @@ const Form = (props) => {
                     value={form.description}
                     handleChange={handleChange}
                     name="description"
-                    placeholder="Crear lista de TO-DO"
+                    placeholder="Ej:Crear lista de TO-DO"
                 />
 
                 <Button
