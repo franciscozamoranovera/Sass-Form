@@ -39,7 +39,7 @@ const Form = (props) => {
                 getTasks()
                 resetForm()
 
-            })
+            });
 
         } catch (error) {
             Swal.fire({
